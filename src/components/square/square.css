@@ -1,0 +1,16 @@
+.square {
+  width: var(--square-size);
+  height: var(--square-size);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square.light {
+  background-color: var(--clr-light);
+}
+
+.square.dark {
+  background-color: var(--clr-dark);
+}

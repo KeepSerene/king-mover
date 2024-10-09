@@ -1,0 +1,63 @@
+:root {
+  --clr-dark: rgb(140, 162, 173);
+  --clr-light: rgb(222, 227, 230);
+  --board-size: 8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font: 100%;
+  color-scheme: dark;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+figure,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: rgb(55, 55, 55);
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Utilities */
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  position: absolute;
+  left: -99999px;
+  top: auto;
+}

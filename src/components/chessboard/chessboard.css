@@ -1,0 +1,17 @@
+.chessboard {
+  width: fit-content;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(var(--board-size), var(--square-size));
+  grid-template-rows: repeat(var(--board-size), var(--square-size));
+}
+
+/* Media queries */
+/* For tablets >= 576px */
+@media screen and (width >= 36rem) {
+  .chessboard {
+    border-radius: 0.625rem;
+  }
+}
