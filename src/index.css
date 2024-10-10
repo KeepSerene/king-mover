@@ -1,6 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
 :root {
+  /* Colors */
+  --clr-bg: rgb(55, 55, 55);
   --clr-dark: rgb(140, 162, 173);
   --clr-light: rgb(222, 227, 230);
+  --dark-sq-coord-clr: var(--clr-light);
+  --light-sq-coord-clr: var(--clr-dark);
+  --legal-move-highlight-clr: rgb(121, 156, 130);
+  --last-move-highlight-clr: rgb(195, 216, 135);
+
+  /* Font family */
+  --ff: "Sofia Sans", sans-serif;
+
+  /* Sizes */
   --board-size: 8;
 }
 
@@ -43,8 +56,8 @@ a {
 body {
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: rgb(55, 55, 55);
-  font-family: sans-serif;
+  background-color: var(--clr-bg);
+  font-family: var(--ff);
 
   display: flex;
   justify-content: center;

@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 }
 
 .square.light {
@@ -13,4 +15,28 @@
 
 .square.dark {
   background-color: var(--clr-dark);
+}
+
+.coord-label {
+  font-size: calc(var(--square-size) * 0.2);
+
+  position: absolute;
+}
+
+.rank-label {
+  bottom: 0.25rem;
+  left: 0.25rem;
+}
+
+.file-label {
+  top: 0.25rem;
+  right: 0.25rem;
+}
+
+.square.dark .coord-label {
+  color: var(--dark-sq-coord-clr);
+}
+
+.square.light .coord-label {
+  color: var(--light-sq-coord-clr);
 }

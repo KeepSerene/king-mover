@@ -5,7 +5,7 @@ import Chessboard from "./components/chessboard/Chessboard";
 
 function App() {
   return (
-    <main className="wrapper">
+    <main className="chessboard-wrapper">
       <h1 className="sr-only">Chess: White goes first!</h1>
 
       <Chessboard />
